@@ -1610,8 +1610,59 @@ fun! s:apply_syntax_highlightings()
   exec 'hi javaScriptMember' . s:fg_foreground
 
   " TypeScript Highlighting
+  exec 'hi typescriptClassExtends' . s:fg_pink
+  exec 'hi typescriptConstructorType' . s:fg_pink
+  exec 'hi typescriptOperator' . s:fg_pink
+  exec 'hi typescriptReadonlyModifier' . s:fg_pink
+  exec 'hi typescriptVariable' . s:fg_pink
+  exec 'hi typescriptAsyncFuncKeyword' . s:fg_pink
+  exec 'hi typescriptArrowFunc' . s:fg_pink
+  exec 'hi typescriptAccessibilityModifier' . s:fg_pink
+  exec 'hi typescriptAliasKeyword' . s:fg_pink . s:ft_bold
+  exec 'hi typescriptClassKeyword' . s:fg_pink . s:ft_bold
+  exec 'hi typescriptEnumKeyword' . s:fg_pink . s:ft_bold
+  exec 'hi typescriptFuncKeyword' . s:fg_pink . s:ft_bold
+  exec 'hi typescriptInterfaceKeyword' . s:fg_pink . s:ft_bold
+
+  exec 'hi typescriptIdentifier' . s:fg_comment . s:ft_bold
+  exec 'hi typescriptNull' . s:fg_comment . s:ft_bold
+
+  exec 'hi typescriptBlock' . s:fg_foreground
+  exec 'hi typescriptBOMWindowProp' . s:fg_foreground
+  exec 'hi typescriptMember' . s:fg_foreground . s:ft_bold
+  exec 'hi typescriptFuncName' . s:fg_foreground . s:ft_bold
+
+  exec 'hi typescriptClassHeritage' . s:fg_navy
+
+  exec 'hi typescriptClassName' . s:fg_blue
+  exec 'hi typescriptEnum' . s:fg_blue
+  exec 'hi typescriptInterfaceName' . s:fg_blue
+  exec 'hi typescriptPredefinedType' . s:fg_blue
+  exec 'hi typescriptTypeReference' . s:fg_blue
+  exec 'hi typescriptCall' . s:fg_blue . s:ft_bold
+
+  exec 'hi typescriptImport' . s:fg_red
+  exec 'hi typescriptExport' . s:fg_red
+
+  exec 'hi typescriptBoolean' . s:fg_green . s:ft_bold
+
+  exec 'hi typescriptString' . s:fg_olive
+  exec 'hi typescriptTemplate' . s:fg_olive
+  exec 'hi typescriptRegExpMethod' . s:fg_olive
+
   exec 'hi typescriptDecorators' . s:fg_orange
+  exec 'hi typescriptTemplateSB' . s:fg_orange
+
+  exec 'hi typescriptConditional' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptConditionalElse' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptCase' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptDefault' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptControl' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptRepeat' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptTry' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptExceptions' . s:fg_purple . s:ft_bold
   exec 'hi typescriptLabel' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptTernaryOp' . s:fg_purple . s:ft_bold
 
   " @target https://github.com/pangloss/vim-javascript
   exec 'hi jsImport' . s:fg_pink . s:ft_bold
